@@ -3,6 +3,7 @@
 from pygame import * 
 from os.path import * 
 import sys
+# from playsound import playsound
 
 # Choice: Selects a random item from a List (Randomize scoring    ): https://pynative.com/python-random-choice/
 from random import choice
@@ -39,7 +40,12 @@ IMAGE = {name: image.load(IMAGE_PATH + '{}.png'.format(name)).convert_alpha()
           for name in IMAGE_NAMES}
 
 
-################GAME DESIGN################
+
+
+
+
+
+################GAME FORMATTING################
 
 class Game_Text_Format(object):
     def __init__(self, textFont, size, message, color, x_position, y_position):
@@ -409,6 +415,7 @@ class CodeCreeps():
                 current_time = time.get_ticks()
                 self.instructor_position = INSTRUCTOR_POSITION
                 self.game_over_helper(current_time)
+                # playsound('sound_assets/game_over.wav')
 
             display.update()
             self.clock.tick(60)
