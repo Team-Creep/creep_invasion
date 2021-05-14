@@ -15,5 +15,5 @@ Alien invasion style game written in PyGame & Python.
 
 ### Keyboard Controls
 **<-**: move left  
-**->**: move right
+**->**: move right  
 **Space Bar**: fire corndogs
